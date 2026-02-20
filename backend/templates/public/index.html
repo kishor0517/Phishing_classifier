@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Orbitron', sans-serif;
+        color: #ffffff;
+        background: #0d0d0d;
+        overflow-x: hidden;
+      }
+
+      /* 🔥 Abstract Moving Horizontal Lines */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: repeating-linear-gradient(
+          90deg,
+          rgba(255, 0, 0, 0.08) 0px,
+          rgba(255, 0, 0, 0.08) 2px,
+          transparent 2px,
+          transparent 120px
+        );
+        animation: moveLines 12s linear infinite;
+        z-index: -1;
+      }
+
+      @keyframes moveLines {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      footer {
+        width: 100%;
+        text-align: center;
+        padding: 18px;
+        background: #111;
+        color: #ff3c3c;
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-top: 1px solid #ff0000;
+        margin-top: 60px;
+      }
+
+      footer span {
+        color: #ffffff;
+        margin: 0 10px;
+      }
+    </style>
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Phishing Detection System" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Phishing Detection</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <footer>
+      DEVELOPED BY 
+      <span>Mayank</span> | 
+      <span>Manish</span> | 
+      <span>Kishor</span>
+    </footer>
+  </body>
+</html>

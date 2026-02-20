@@ -1,0 +1,60 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  text-align: center;
+  position: relative;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  padding-bottom: 100px; /* space for footer */
+}
+
+.hero-section {
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  margin: 15px 0 25px 0;
+  color: #ccc;
+}
+
+.cta-btn {
+  padding: 10px 30px;
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  border: 1px solid red;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: red;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid red;
+}

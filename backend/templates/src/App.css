@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+/* Center scan page */
+.scanner-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  text-align: center;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+/* Input */
+.scanner-container input {
+  width: 400px;
+  padding: 12px;
+  margin-top: 15px;
+  background: #111;
+  border: 1px solid red;
+  color: white;
+  outline: none;
+}
+
+/* Button */
+.scanner-container button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: red;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid red;
+}
